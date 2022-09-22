@@ -1,0 +1,113 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    height: 100vh;
+    /* width: 100vh; */
+    background-image: url("backcovid.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.navbar{
+    height: 1.5em;
+    background:black;
+    opacity: 70%;
+    color: white;
+    font-size: 3rem;
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+span{
+    color:#C10101 ;
+    font-weight: bolder;
+    margin-left: 1rem;
+}
+
+.search{
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+}
+
+.search-bar{
+    height: 1.5em;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    background:whitesmoke;
+    opacity: 70%;
+    border: 2px solid black;
+    border-radius: 5em 0em 0em 5em;
+    color: black;
+    text-align: center;
+    
+}
+
+.search-label{
+    color: white;
+    font-size: 1.5rem;
+    background: black;
+    opacity: 80%;
+    width: 4em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 0em 5em 5em 0em;
+}
+
+.main-data{
+    border: 2px solid black;
+    height: 15em;
+    background:black;
+    opacity: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 1em;
+}
+
+.box{
+    height: 80%;
+    width: 13%;
+    border: 2px solid white;
+    /* display: flex; */
+    justify-content: center;
+    background:black;
+}
+
+h1{
+    color: white;
+    text-align:center; 
+    text-transform: capitalize;
+    font-size: 1.5rem;
+    margin-top: .5em;
+}
+
+h2{
+    color: white;
+    text-align: center;
+    margin-top: 1.7em;
+    font-size: 2.2rem;
+}
+
+.gdata{
+    margin-top: 0em;
+}
+
+.globalname{
+    margin-top: 1em;
+}
+
+h1.gname{
+    color: black;
+    font-size: 3rem;
+}
+
+
+

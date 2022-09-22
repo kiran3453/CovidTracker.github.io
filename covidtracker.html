@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="covidtracker.css">
+    
+</head>
+<body>
+   
+    <main class="container">
+        <nav class="navbar">Covid <span> Tracker </span></nav>
+        <div class="search">
+            <input id="searchbar" class="search-bar" type="text" placeholder="  Enter Country Name">
+            <button class="search-label" for="searchbar">Search</button>
+         </div>
+
+         <!-- main data box-->
+
+         <div class="main-data">
+            <div class="box country">
+                <h1>country</h1>
+                <h2 class="countrynam"></h2>
+            </div>
+            <div class="box new-confrimed-case">
+                <h1>new case</h1>
+                <h2 class="text newcase"></h2>
+            </div>
+            <div class="box total-confrimed">
+                <h1>total case</h1>
+                <h2 class="text totalcase"></h2>
+            </div>
+            <div class="box new-deaths">
+                <h1>new deaths</h1>
+                <h2 class="text newdeath"></h2>
+            </div>
+            <div class="box total-death">
+                <h1>total deaths</h1>
+                <h2 class="text totaldeath"></h2>
+            </div>
+            <div class="box rew-recovered">
+                <h1>new recovered</h1>
+                <h2 class="text newrecovered"></h2>
+            </div>
+            <div class="box total-recovered">
+                <h1>total recovered</h1>
+                <h2 class="text1 totalrecovered"></h2>
+            </div>
+         </div>
+         <div class="globalname"><h1 class="gname">global</h1></div>
+         <div class="main-data gdata">
+            <div class="box g-namecase">
+                <h1>new case</h1>
+                <h2 class="text gnewcase"></h2>
+            </div>
+            <div class="box g-totalcase">
+                <h1>total case</h1>
+                <h2 class="text gtotalcase"></h2>
+            </div>
+            <div class="box g-newdeaths">
+                <h1>new deaths</h1>
+                <h2 class="text gnewdeaths"></h2>
+            </div>
+            <div class="box g-totaldeaths">
+                <h1>total deaths</h1>
+                <h2 class="text gdeaths"></h2>
+            </div>
+            <div class="box g-newrecovered">
+                <h1>new recovered</h1>
+                <h2 class="text gnewrecovered"></h2>
+            </div>
+            <div class="box g-totalrecovered">
+                <h1>total recovered</h1>
+                <h2 class="text gtotalrecovered"></h2>
+            </div>
+         </div>
+    </main>
+
+    <script src="covidtracker.js"></script>
+</body>
+</html>
