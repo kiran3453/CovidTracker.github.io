@@ -7,23 +7,31 @@ let totalrecovered = document.querySelector(".totalrecovered")
 let country = document.querySelector(".countrynam")
 let submit = document.querySelector("button")
 let inputBox = document.querySelector("input")
-
-let gtotalcase = document.querySelector(".gtotalcase")
-let gnewcase = document.querySelector(".g-newcase")
-let gnewdeath = document.querySelector(".g-newdeaths")
-let gtotaldeath = document.querySelector(".g-totaldeath")
-let gnewrecovered = document.querySelector(".g-newrecovered")
-let gtotalrecovered = document.querySelector(".g-totalrecovered")
 let countryName = ""
 
-    window.onload = function(){
-        fetch("https://api.covid19api.com/summary")
-        .then( d => d.json())
-        .then(d => {
-        console.log(d)
-        let v = Global.TotalDeaths;
-        gtotalcase.innerText = v
-})}
+let gltotalcase = document.querySelector(".gtotalcase")
+let glnewcase = document.querySelector(".gnewcase")
+let glnewdeath = document.querySelector(".gnewdeaths")
+let gltotaldeath = document.querySelector(".gdeaths")
+let glnewrecovered = document.querySelector(".gnewrecovered")
+let gltotalrecovered = document.querySelector(".gtotalrecovered")
+
+
+
+    fetch("https://api.covid19api.com/summary")
+    .then( d => d.json())
+    .then(d => {
+    console.log(d)
+
+        gltotalcase.innerText = d.Global.TotalConfirmed
+        glnewcase.innerText = d.Global.NewConfirmed
+        glnewdeath.innerText = d.Global.NewDeaths
+        gltotaldeath.innerText = d.Global.TotalDeaths
+        glnewrecovered.innerText = d.Global.NewRecovered
+        gltotalrecovered.innerText = d.Global.TotalRecovered
+        
+})
+
 
 
 //}
